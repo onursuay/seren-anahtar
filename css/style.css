@@ -195,7 +195,6 @@ a {
 
 .nav-menu a.active {
     color: var(--accent-orange);
-    font-weight: 600;
 }
 
 .header-buttons {
