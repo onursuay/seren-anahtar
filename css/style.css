@@ -53,11 +53,11 @@ a {
     gap: 8px;
     padding: 12px 24px;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s ease;
     cursor: pointer;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
     white-space: nowrap;
 }
 
@@ -169,9 +169,9 @@ a {
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;
     width: auto;
-    max-width: 200px;
+    max-width: 250px;
     object-fit: contain;
 }
 
