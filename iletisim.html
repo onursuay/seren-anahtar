@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seren Anahtar iletişim - Dikmen'de 7/24 çilingir hizmeti için bize ulaşın. Telefon, WhatsApp ve adres bilgilerimiz.">
+    <meta name="keywords" content="Seren Anahtar iletişim, Dikmen çilingir telefon, çilingir adresi Ankara">
+    <title>İletişim - Seren Anahtar | Dikmen Çilingir ve Bisiklet Tamiri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animasyonlu Anahtar İkonu -->
+    <div class="floating-key">
+        <i class="fas fa-key"></i>
+    </div>
+
+    <!-- Sabit Üst Menü -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/seren-anahtar-logo.png" alt="Seren Anahtar Logo">
+                </a>
+                <nav class="nav-menu" id="navMenu">
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="cilingir-hizmetleri.html">Çilingir Hizmetleri</a>
+                    <a href="bisiklet-tamiri.html">Bisiklet Tamiri</a>
+                    <a href="hakkimizda.html">Hakkımızda</a>
+                    <a href="sss.html">SSS</a>
+                    <a href="iletisim.html" class="active">İletişim</a>
+                </nav>
+                <div class="header-buttons">
+                    <a href="tel:+905324771516" class="btn btn-call">
+                        <i class="fas fa-phone"></i>
+                        <span>Hemen Ara</span>
+                    </a>
+                    <a href="https://wa.me/905324771516" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sayfa Başlığı -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bize ulaşın, size yardımcı olmaktan mutluluk duyarız</p>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <div class="page-banner">
+        <img src="images/banner-iletisim.svg" alt="İletişim">
+    </div>
+
+    <!-- İletişim Bilgileri -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Telefon</h3>
+                    <p><a href="tel:+905324771516" style="color: var(--accent-orange); font-size: 20px; font-weight: 600;">0532 477 15 16</a></p>
+                    <p style="margin-top: 10px; color: var(--text-light);">7/24 Çilingir Hizmeti</p>
+                </div>
+
+                <div class="contact-box">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/905324771516" target="_blank" style="color: #25D366; font-size: 20px; font-weight: 600;">0532 477 15 16</a></p>
+                    <p style="margin-top: 10px; color: var(--text-light);">Hızlı İletişim</p>
+                </div>
+
+                <div class="contact-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Adres</h3>
+                    <p style="font-weight: 600;">Dikmen, Ankara</p>
+                    <p style="margin-top: 10px; color: var(--text-light);">Detaylı adres randevu sonrası paylaşılır</p>
+                </div>
+
+                <div class="contact-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>Çalışma Saatleri</h3>
+                    <p style="font-weight: 600;">Çilingir: 7/24</p>
+                    <p style="font-weight: 600; margin-top: 5px;">Bisiklet: Yaz Sezonu</p>
+                    <p style="margin-top: 10px; color: var(--text-light);">(Mayıs - Eylül)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Formu -->
+    <section class="content-section" style="background: var(--light-bg); padding-top: 60px; padding-bottom: 80px;">
+        <div class="container">
+            <h2 class="section-title">Bize Mesaj Gönderin</h2>
+            <p class="section-subtitle">Formu doldurun, en kısa sürede size dönüş yapalım</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Adınız Soyadınız *</label>
+                    <input type="text" id="name" name="name" required placeholder="Adınız ve soyadınız">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon Numaranız *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="5XX XXX XX XX">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-posta Adresiniz</label>
+                    <input type="email" id="email" name="email" placeholder="ornek@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Konu</label>
+                    <select id="subject" name="subject" style="width: 100%; padding: 12px; border: 2px solid var(--light-bg); border-radius: 8px; font-size: 16px; font-family: inherit;">
+                        <option value="cilingir">Çilingir Hizmeti</option>
+                        <option value="bisiklet">Bisiklet Tamiri</option>
+                        <option value="fiyat">Fiyat Bilgisi</option>
+                        <option value="randevu">Randevu</option>
+                        <option value="sikayet">Şikayet/Öneri</option>
+                        <option value="diger">Diğer</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mesajınız *</label>
+                    <textarea id="message" name="message" required placeholder="Mesajınızı buraya yazın..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp ile Gönder
+                </button>
+                <p style="text-align: center; margin-top: 15px; color: var(--text-light); font-size: 14px;">
+                    Formu gönderdikten sonra WhatsApp'a yönlendirileceksiniz.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Harita -->
+    <section class="content-section" style="padding-top: 0; padding-bottom: 80px;">
+        <div class="container">
+            <h2 class="section-title">Konum</h2>
+            <p class="section-subtitle">Dikmen, Ankara bölgesinde hizmet vermekteyiz</p>
+            <div class="map-container">
+                <!-- Google Maps - Dikmen, Ankara genel konumu -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48762.47547268389!2d32.84841673286445!3d39.90357297326373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f190a9cea8f%3A0x5e3f8e8c8e8c8e8d!2sDikmen%2C%20%C3%87ankaya%2FAnkara!5e0!3m2!1str!2str!4v1699999999999!5m2!1str!2str" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <p style="color: var(--text-light); font-size: 16px;">
+                    <i class="fas fa-info-circle"></i> Detaylı adres bilgisi randevu sonrası paylaşılacaktır.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hızlı İletişim -->
+    <section class="content-section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2 class="section-title">Hızlı İletişim Yolları</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon" style="color: var(--accent-green);">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h3>Telefon ile Ara</h3>
+                    <p>En hızlı iletişim yolu telefonla aramaktır. Özellikle acil durumlarda direkt arayın.</p>
+                    <a href="tel:+905324771516" class="btn btn-call" style="margin-top: 15px;">
+                        <i class="fas fa-phone"></i>
+                        0532 477 15 16
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon" style="color: #25D366;">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp Mesaj</h3>
+                    <p>Mesajlaşmak için WhatsApp kullanabilirsiniz. Fotoğraf gönderebilir, randevu alabilirsiniz.</p>
+                    <a href="https://wa.me/905324771516" target="_blank" class="btn btn-whatsapp" style="margin-top: 15px;">
+                        <i class="fab fa-whatsapp"></i>
+                        Mesaj Gönder
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon" style="color: var(--accent-orange);">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>İletişim Formu</h3>
+                    <p>Yukarıdaki formu doldurarak bize mesaj gönderebilirsiniz. En kısa sürede dönüş yapılır.</p>
+                    <a href="#contactForm" class="btn btn-secondary" style="margin-top: 15px;">
+                        <i class="fas fa-arrow-up"></i>
+                        Forma Git
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acil Durum Bilgisi -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-box" style="background: linear-gradient(135deg, #ff8c42 0%, #ff7528 100%); color: white; text-align: center;">
+                <i class="fas fa-exclamation-triangle" style="font-size: 48px; margin-bottom: 20px;"></i>
+                <h3 style="color: white; font-size: 28px; margin-bottom: 15px;">Acil Durumda Ne Yapmalısınız?</h3>
+                <p style="font-size: 18px; line-height: 1.8; margin-bottom: 25px;">
+                    Kapınıza kilitlendiniz mi? Anahtarınızı mı kaybettiniz? Panik yapmayın!<br>
+                    Hemen <strong>0532 477 15 16</strong> numaralı telefonu arayın.<br>
+                    7/24 hizmet veriyoruz, en kısa sürede yanınızdayız.
+                </p>
+                <a href="tel:+905324771516" class="btn" style="background: white; color: var(--accent-orange); font-size: 20px; padding: 18px 40px;">
+                    <i class="fas fa-phone-alt"></i>
+                    Acil Arama Yap
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Seren Anahtar</h3>
+                    <p>Dikmen'de 7/24 güvenilir çilingir ve bisiklet tamiri hizmeti</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="cilingir-hizmetleri.html">Çilingir Hizmetleri</a></li>
+                        <li><a href="bisiklet-tamiri.html">Bisiklet Tamiri</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Dikmen, Ankara</p>
+                    <p><i class="fas fa-phone"></i> 0532 477 15 16</p>
+                    <p><i class="fas fa-clock"></i> 7/24 Hizmet</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/905324771516" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seren Anahtar. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobil Sabit Arama Butonu -->
+    <a href="tel:+905324771516" class="mobile-call-btn">
+        <i class="fas fa-phone-alt"></i>
+        <span>Hemen Ara</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
