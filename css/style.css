@@ -182,19 +182,28 @@ a {
 }
 
 .nav-menu a {
-    color: var(--white);
+    color: #ffffff !important;
     font-weight: 500;
     transition: all 0.3s;
     padding: 5px 0;
     font-size: 16px;
 }
 
+.nav-menu a:visited {
+    color: #ffffff !important;
+}
+
 .nav-menu a:hover {
     opacity: 0.8;
+    color: #ffffff !important;
 }
 
 .nav-menu a.active {
-    color: var(--accent-orange);
+    color: #ff8c42 !important;
+}
+
+.nav-menu a.active:visited {
+    color: #ff8c42 !important;
 }
 
 .header-buttons {
