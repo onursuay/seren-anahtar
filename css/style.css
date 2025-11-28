@@ -184,14 +184,18 @@ a {
 .nav-menu a {
     color: var(--white);
     font-weight: 500;
-    transition: color 0.3s;
+    transition: all 0.3s;
     padding: 5px 0;
     font-size: 16px;
 }
 
-.nav-menu a:hover,
+.nav-menu a:hover {
+    opacity: 0.8;
+}
+
 .nav-menu a.active {
     color: var(--accent-orange);
+    font-weight: 600;
 }
 
 .header-buttons {
