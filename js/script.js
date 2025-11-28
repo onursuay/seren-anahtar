@@ -270,16 +270,37 @@ window.addEventListener('load', () => {
 });
 
 // ===== AKTİF SAYFA MENU İŞARETLEME =====
-const currentLocation = window.location.pathname;
-const menuItems = document.querySelectorAll('.nav-menu a');
-
-menuItems.forEach(item => {
-    if (item.getAttribute('href') === currentLocation.split('/').pop() || 
-        (currentLocation.includes(item.getAttribute('href')) && item.getAttribute('href') !== 'index.html')) {
-        item.classList.add('active');
-    } else if (currentLocation === '/' || currentLocation.endsWith('/') && item.getAttribute('href') === 'index.html') {
-        item.classList.add('active');
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    // Tüm nav linklerinden active class'ını kaldır
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    // Önce hepsinden active'i kaldır
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+    
+    // Mevcut sayfayı tespit et
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop() || '';
+    
+    // Sadece mevcut sayfaya active ekle
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        
+        // Ana sayfa kontrolü
+        if ((currentPage === '' || currentPage === 'index.html' || currentPath === '/') && 
+            (href === '/' || href === 'index.html')) {
+            link.classList.add('active');
+        }
+        // Diğer sayfalar
+        else if (currentPage && href === currentPage) {
+            link.classList.add('active');
+        }
+        // /en/ klasöründeki sayfalar
+        else if (currentPath.includes('/en/') && href.includes(currentPage)) {
+            link.classList.add('active');
+        }
+    });
 });
 
 // ===== CONSOLE LOGO =====
