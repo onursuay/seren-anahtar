@@ -1,0 +1,16 @@
+# Seren Anahtar - cPanel / Turhost uyumlu ayarlar
+
+# Varsayılan giriş sayfası (ana sayfa)
+DirectoryIndex index.html
+
+# Türkçe karakterler için UTF-8
+AddDefaultCharset UTF-8
+
+# Klasör listelemeyi kapat (güvenlik)
+Options -Indexes
+
+# .html uzantısı olmadan erişim (isteğe bağlı - bazı sunucularda çalışmayabilir)
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME}.html -f
+# RewriteRule ^(.*)$ $1.html [L]

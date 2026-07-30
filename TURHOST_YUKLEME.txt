@@ -1,0 +1,94 @@
+================================================================================
+  SEREN ANAHTAR - TURHOST cPanel İLE YAYINLAMA REHBERİ
+================================================================================
+
+HANGİ KLASÖRÜ YÜKLEYECEKSİNİZ?
+------------------------------
+  ► "seren-anahtar" klasörünün İÇİNDEKİ TÜM DOSYA VE KLASÖRLERİ yükleyin.
+  ► Yani "seren-anahtar" klasörünün kendisini değil, içeriğini seçin.
+
+  Yüklenecek öğeler:
+  ├── index.html              (ana sayfa)
+  ├── hakkimizda.html
+  ├── iletisim.html
+  ├── sss.html
+  ├── bisiklet-tamiri.html
+  ├── cilingir-hizmetleri.html
+  ├── .htaccess               (sunucu ayarları - gizli dosya)
+  ├── css/
+  │   └── style.css
+  ├── js/
+  │   └── script.js
+  ├── images/
+  │   └── (tüm görseller: logo, banner'lar, slider görselleri vb.)
+  └── en/
+      ├── index.html
+      ├── about.html
+      ├── contact.html
+      ├── faq.html
+      ├── locksmith-services.html
+      └── bicycle-repair.html
+
+
+NEREYE YÜKLEYECEKSİNİZ?
+------------------------------
+  ► Turhost cPanel → Dosya Yöneticisi (File Manager) → public_html
+
+  Site ana domain’e açılacaksa:
+    Tüm dosya ve klasörleri doğrudan "public_html" içine atın.
+    Sonuç: public_html/index.html, public_html/css/... vb.
+
+  Site alt domain veya alt klasörde açılacaksa:
+    Örnek: www.siteniz.com/seren-anahtar/ → public_html içinde
+    "seren-anahtar" adında bir klasör oluşturup dosyaları onun içine yükleyin.
+    (Bu durumda linklerde /seren-anahtar/ öneki gerekebilir; gerekirse söyleyin.)
+
+
+ADIM ADIM cPanel YÜKLEME
+------------------------------
+  1. Turhost’a giriş yapın → cPanel’i açın.
+  2. "Dosya Yöneticisi" (File Manager) bölümüne girin.
+  3. Sol taraftan "public_html" klasörüne tıklayın.
+  4. "Yükle" (Upload) butonuna tıklayın.
+  5. Bilgisayarınızdaki "seren-anahtar" klasörünü açın; içindeki TÜM dosya
+     ve klasörleri seçip sürükleyip public_html alanına bırakın
+     (veya "Dosya Seç" ile tek tek ekleyin).
+  6. .htaccess dosyası görünmüyorsa: Dosya Yöneticisi’nde "Ayarlar" (Settings)
+     kısmından "Gizli dosyaları göster" (Show hidden files) seçeneğini açın,
+     sonra .htaccess’i de yükleyin.
+  7. Yükleme bitince tarayıcıdan sitenizi açıp kontrol edin:
+     https://alanadiniz.com
+     https://alanadiniz.com/en/
+
+
+YÜKLENMESİ GEREKMEYENLER
+------------------------------
+  Aşağıdakileri sunucuya yüklemeniz gerekmez (sadece proje/geliştirme dosyaları):
+  - .git (klasör)
+  - .gitignore
+  - README.md
+  - TURHOST_YUKLEME.txt (bu dosya – isterseniz yükleyebilirsiniz, zararsızdır)
+  - assets/ (Cursor/proje görselleri vb. – sitede kullanılmıyorsa yüklemeyin)
+
+
+GÖRSEL KONTROL LİSTESİ
+------------------------------
+  Sitede kullanılan görsellerin "images" klasöründe olduğundan emin olun:
+  - seren-anahtar-logo.png
+  - ev-cilingir.jpeg
+  - oto-cilingir.jpg
+  - bisiklet-tamiri.jpg
+  - banner-hakkimizda.svg, banner-iletisim.svg, banner-sss.svg,
+    banner-bisiklet.svg, banner-cilingir.svg
+  Eksik görsel varsa sayfalar boş veya kırık görünebilir.
+
+
+SORUN ÇIKARSA
+------------------------------
+  - Ana sayfa açılmıyorsa: public_html içinde "index.html" var mı kontrol edin.
+  - 403 / 500 hatası: .htaccess’i geçici silip tekrar deneyin; sunucu
+    .htaccess’e izin vermiyor olabilir.
+  - CSS/JS yüklenmiyorsa: css/ ve js/ klasörlerinin public_html içinde
+    olduğundan emin olun; yollar zaten projede doğru (css/style.css, js/script.js).
+
+================================================================================
